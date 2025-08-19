@@ -11,8 +11,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 NAME = os.getenv("NAME", socket.gethostname())
 PORT = int(os.getenv("PORT", "3000"))  # HTTP 服务端口
 DOMAIN = os.getenv("DOMAIN", "no_domain")
-RAW_UUID = os.getenv("uuid", "08bd126e-e863-48f4-883d-5f28ff83f2ed")
-  # 必须保持变量名 uuid
+RAW_UUID = os.getenv("uuid", "") or str(uuid.uuid4()) # 变量uuid，若不配置则随机生成uuid
 HAS_UUID = bool(os.getenv("uuid"))
 HAS_DOMAIN = bool(os.getenv("DOMAIN"))
 UUID = RAW_UUID.replace("-", "")
@@ -42,7 +41,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.send_header("Content-Type", "text/plain; charset=utf-8")
             self.end_headers()
             self.wfile.write(
-                f"🟢部署成功 (Python版)\n\n访问路径：/{RAW_UUID}\n".encode("utf-8")
+                f"🟢部署成功 (Python版)\n\n\n\n查看节点信息路径：/你的uuid或者/subuuid\n\n".encode("utf-8")
             )
         elif self.path == f"/{RAW_UUID}":
             result = vlessURL
@@ -59,7 +58,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header("Content-Type", "text/plain; charset=utf-8")
             self.end_headers()
-            self.wfile.write("❌路径错误".encode("utf-8"))
+            self.wfile.write("❌Not Found：路径错误！！！\n\n查看节点信息路径：/你的uuid或者/subuuid".encode("utf-8"))
 
 # ========== 下载 argosb.sh ==========
 def download_argosb():
