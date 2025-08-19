@@ -5,8 +5,8 @@ import uuid
 import socket
 import subprocess
 import threading
-importlib.util.find_spec("requests") or subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "requests"])
-import requests
+try: import requests
+except ImportError: subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "requests"]); import requests
 from http.server import BaseHTTPRequestHandler, HTTPServer
 # 检查 requests 是否已安装
 
