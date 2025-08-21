@@ -13,14 +13,16 @@ ARG  agk=$agk
 WORKDIR /app
 
 # 安装依赖 & 下载脚本
-RUN apk add --no-cache curl  bash wget net-tools lsof \
+RUN apk add --no-cache curl bash wget python3 py3-pip net-tools lsof \
  && npm install -g npm@11.5.2 \
- && curl -LOs https://raw.githubusercontent.com/laalucas-us/agsb-docker/refs/heads/main/argosb.sh \
- && curl -LOs https://raw.githubusercontent.com/laalucas-us/agsb-docker/refs/heads/main/index.js \
- && curl -LOs https://raw.githubusercontent.com/laalucas-us/agsb-docker/refs/heads/main/package.json \
- && curl -LOs https://raw.githubusercontent.com/laalucas-us/agsb-docker/refs/heads/main/package-lock.json \
- && curl -LOs https://raw.githubusercontent.com/laalucas-us/agsb-docker/refs/heads/main/start.sh \
- && chmod +x argosb.sh start.sh \
+ && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/argosb.sh \
+ && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/index.js \
+ && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/package.json \
+ && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/package-lock.json \
+ && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/package-lock.json \
+ && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/server.py \
+ && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/start.sh \
+ && chmod +x argosb.sh start.sh server.py \
  && npm install --production ws \
  && npm cache clean --force
 
