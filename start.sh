@@ -29,7 +29,7 @@ fi
 function st_server(){
 if [ -f "server.py" ]; then
   echo "[start] Running Python app..."
-  python3 main.py
+  python3 server.py
 else
   echo "[start] No Python app found, keeping container alive..."
   tail -f /dev/null
