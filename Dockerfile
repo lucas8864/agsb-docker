@@ -13,7 +13,7 @@ ARG  agk=$agk
 WORKDIR /app
 
 # 安装依赖 & 下载脚本
-RUN apk add --no-cache curl bash wget python3 py3-pip net-tools lsof \
+RUN apk add --no-cache curl bash wget python3 py3-pip py3-requests net-tools lsof \
  && npm install -g npm@11.5.2 \
  && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/argosb.sh \
  && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/index.js \
