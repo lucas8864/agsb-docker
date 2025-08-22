@@ -44,5 +44,5 @@ USER node
 EXPOSE 7860
 
 # 采用start.sh启动web服务
-#CMD ["node", "index.js"]
-CMD ["bash", "-c", "./start.sh"]
+CMD ["node", "index.js"]
+#CMD ["bash", "-c", "./start.sh"]
