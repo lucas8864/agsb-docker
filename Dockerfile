@@ -9,7 +9,7 @@ RUN apt-get update && \
     net-tools \
     lsof \
     openssl \
-    procps
+    procps \
     && rm -rf /var/lib/apt/lists/*   
     
 COPY package*.json ./
