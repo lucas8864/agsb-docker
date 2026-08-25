@@ -1,1 +1,97 @@
-const _0x2205fe=_0xed94;function _0x426f(){const _0xf0df7b=['connect','from','existsSync','no_domain','PORT','createServer','2mtHsMD','join','10wVkOvc','vmpt','agn','pipe','once','connection','readFile','path','end','44392','decode','1434840SzBtpk','agsb','log','child_process','data','subuuid','argo','replace','reduce','write','2315574DLeqyr','env','map','🚀App\x20is\x20running','/home/node/agsb/argosb.sh','662696XUzriF','614224rBPFgJ','listen','slice','🟢恭喜！部署成功！欢迎使用甬哥YGkkk-ArgoSB小钢炮脚本💣\x20【当前版本V25.8.8】\x0a\x0a查看节点信息路径：/你的uuid或者/subuuid','readUInt16BE','url','uuid','711795NZGcyO','utf8','http','substr','832610dAGEHe',':443?encryption=none&security=tls&sni=','✅\x20argosb.sh\x20执行成功，退出码:\x20','writeHead','text/plain;\x20charset=utf-8','&fp=chrome&type=ws&host=','✅Server\x20is\x20running\x20on\x20port\x20','81sXlVJm','hostname','concat','DOMAIN','readUInt8','argosb.sh\x20not\x20found\x20at\x20','NAME','242021lLDXFS','length','send','stdout','bash\x20\x22','net','vless://','error'];_0x426f=function(){return _0xf0df7b;};return _0x426f();}function _0xed94(_0x230414,_0x3b69c5){const _0x426f0e=_0x426f();return _0xed94=function(_0xed94cc,_0x3b2cd3){_0xed94cc=_0xed94cc-0x155;let _0x5d76eb=_0x426f0e[_0xed94cc];return _0x5d76eb;},_0xed94(_0x230414,_0x3b69c5);}(function(_0x44987c,_0x23c69b){const _0x31469b={_0x4088a1:0x171,_0x5517e7:0x17e,_0x542f89:0x173,_0x5d408d:0x195,_0x2781e3:0x18e,_0x5ee45e:0x15c,_0x33c3ad:0x155},_0x14729e=_0xed94,_0x3298c2=_0x44987c();while(!![]){try{const _0x464974=parseInt(_0x14729e(0x163))/0x1*(parseInt(_0x14729e(_0x31469b._0x4088a1))/0x2)+-parseInt(_0x14729e(_0x31469b._0x5517e7))/0x3+-parseInt(_0x14729e(0x18d))/0x4*(parseInt(_0x14729e(_0x31469b._0x542f89))/0x5)+parseInt(_0x14729e(0x188))/0x6+-parseInt(_0x14729e(_0x31469b._0x5d408d))/0x7+parseInt(_0x14729e(_0x31469b._0x2781e3))/0x8*(parseInt(_0x14729e(_0x31469b._0x5ee45e))/0x9)+parseInt(_0x14729e(_0x31469b._0x33c3ad))/0xa;if(_0x464974===_0x23c69b)break;else _0x3298c2['push'](_0x3298c2['shift']());}catch(_0x37398c){_0x3298c2['push'](_0x3298c2['shift']());}}}(_0x426f,0x77d94));const http=require(_0x2205fe(0x197)),fs=require('fs'),os=require('os'),net=require(_0x2205fe(0x168)),path=require(_0x2205fe(0x17a)),{exec}=require(_0x2205fe(0x181)),{WebSocket,createWebSocketStream}=require('ws'),NAME=process[_0x2205fe(0x189)][_0x2205fe(0x162)]||os[_0x2205fe(0x15d)](),subtxt=path[_0x2205fe(0x172)](os['homedir'](),_0x2205fe(0x17f),'jh.txt'),PORT=process[_0x2205fe(0x189)][_0x2205fe(0x16f)]||0x1f90,DOMAIN=process[_0x2205fe(0x189)][_0x2205fe(0x15f)]||process['env'][_0x2205fe(0x175)]||_0x2205fe(0x16e),rawUUID=process[_0x2205fe(0x189)][_0x2205fe(0x194)]||_0x2205fe(0x183),hasUUID=!!process[_0x2205fe(0x189)]['uuid'],hasDOMAIN=!!(process[_0x2205fe(0x189)][_0x2205fe(0x15f)]||process[_0x2205fe(0x189)][_0x2205fe(0x175)]),uuid=rawUUID[_0x2205fe(0x185)](/-/g,''),vlessURL=hasUUID&&hasDOMAIN?_0x2205fe(0x169)+rawUUID+'@'+DOMAIN+_0x2205fe(0x156)+DOMAIN+_0x2205fe(0x15a)+DOMAIN+'&path=%2F#Vl-ws-tls-'+NAME:'',server=http[_0x2205fe(0x170)]((_0x5695c0,_0x50cead)=>{const _0x35ad25={_0x4162d0:0x191,_0x3449f0:0x179,_0x833646:0x196,_0x98a028:0x159,_0x2fb73a:0x17b},_0x5bb90f={_0xeb425d:0x158},_0x4a3159=_0x2205fe;if(_0x5695c0[_0x4a3159(0x193)]==='/')_0x50cead[_0x4a3159(0x158)](0xc8,{'Content-Type':_0x4a3159(0x159)}),_0x50cead['end'](_0x4a3159(_0x35ad25._0x4162d0));else _0x5695c0[_0x4a3159(0x193)]==='/'+rawUUID?fs[_0x4a3159(_0x35ad25._0x3449f0)](subtxt,_0x4a3159(_0x35ad25._0x833646),(_0x39d987,_0x1be8e9)=>{const _0x29e612=_0x4a3159,_0x27e18f=!_0x39d987&&_0x1be8e9?vlessURL?vlessURL+'\x0a'+_0x1be8e9:_0x1be8e9:vlessURL;_0x50cead[_0x29e612(_0x5bb90f._0xeb425d)](0xc8,{'Content-Type':_0x29e612(0x159)}),_0x50cead[_0x29e612(0x17b)](_0x27e18f);}):(_0x50cead['writeHead'](0x194,{'Content-Type':_0x4a3159(_0x35ad25._0x98a028)}),_0x50cead[_0x4a3159(_0x35ad25._0x2fb73a)]('❌Not\x20Found：路径错误！！！\x0a\x0a查看节点信息路径：/你的uuid或者/subuuid'));});server[_0x2205fe(0x18f)](PORT,()=>{const _0x101809={_0x1f090a:0x15b,_0x5edd95:0x18c,_0x5ec918:0x167,_0x547a6e:0x189,_0x288c5e:0x174,_0x433794:0x17c,_0x2bfe3e:0x189,_0x5706c2:0x182,_0x438e28:0x16a},_0x2bec08={_0x508cab:0x180,_0x4450c7:0x18b},_0x3731a6=_0x2205fe;console[_0x3731a6(0x180)](_0x3731a6(_0x101809._0x1f090a)+PORT);const _0x5aabaf=_0x3731a6(_0x101809._0x5edd95);if(fs[_0x3731a6(0x16d)](_0x5aabaf)){const _0x125216=exec(_0x3731a6(_0x101809._0x5ec918)+_0x5aabaf+'\x22',{'env':{...process[_0x3731a6(_0x101809._0x547a6e)],'vmpt':process[_0x3731a6(0x189)][_0x3731a6(_0x101809._0x288c5e)]||_0x3731a6(_0x101809._0x433794),'argo':process[_0x3731a6(_0x101809._0x2bfe3e)][_0x3731a6(0x184)]||'y','agn':process[_0x3731a6(0x189)][_0x3731a6(0x175)]||'cloud.koy.ccwu.cc','agk':process[_0x3731a6(0x189)]['agk']||'eyJhIjoiM2E5ODM4YmE1Y2I1ZjA1ODFkYjQ5YzZjNGI0Y2E5ODYiLCJ0IjoiYTM3NWQ5ZmItMzdmZi00MGQ3LWEzYjgtOWM1OGRjZDUwZmRlIiwicyI6Ik9ESTNPV1E1TkRBdFl6ZzROQzAwT0RrMExUbGpPV0V0WkdZMU16azFOalk0T1RnMSJ9'}});_0x125216['stdout']['on'](_0x3731a6(0x182),_0xd69e0=>process[_0x3731a6(0x166)][_0x3731a6(0x187)](_0xd69e0)),_0x125216['stderr']['on'](_0x3731a6(_0x101809._0x5706c2),_0xaa616d=>process['stderr'][_0x3731a6(0x187)](_0xaa616d)),_0x125216['on']('close',_0x21b51a=>{const _0x1425e3={_0x3b7fd6:0x177,_0x52d21e:0x16a},_0x141431={_0xd64dd0:0x16c,_0xd52270:0x164,_0x204b61:0x190,_0x56d99e:0x164,_0x3f1afe:0x160,_0x32defe:0x172,_0x54f75b:0x17d,_0x4cfd6e:0x190,_0x26fa49:0x18a,_0x2e731c:0x16b},_0x337212=_0x3731a6;if(_0x21b51a!==0x0){console[_0x337212(0x16a)]('❌\x20argosb.sh\x20执行失败，退出码:\x20'+_0x21b51a);return;}console[_0x337212(_0x2bec08._0x508cab)](_0x337212(0x157)+_0x21b51a),console['log'](_0x337212(_0x2bec08._0x4450c7));if(hasUUID&&hasDOMAIN){const _0x3a39b2=new WebSocket['Server']({'server':server});_0x3a39b2['on'](_0x337212(0x178),_0x2b57a6=>{const _0x1378fc=_0x337212;_0x2b57a6[_0x1378fc(_0x1425e3._0x3b7fd6)]('message',_0x162b5a=>{const _0x58301d={_0x26fc5a:0x187,_0x5cd038:0x190,_0x5e4105:0x16a,_0xa8c388:0x176},_0x200eea=_0x1378fc;if(!(_0x162b5a instanceof Buffer))_0x162b5a=Buffer[_0x200eea(_0x141431._0xd64dd0)](_0x162b5a);if(_0x162b5a[_0x200eea(_0x141431._0xd52270)]<0x13)return;const [_0xd8454d]=_0x162b5a,_0x3c4aab=_0x162b5a[_0x200eea(_0x141431._0x204b61)](0x1,0x11);if(!_0x3c4aab['every']((_0x30aadd,_0x358b39)=>_0x30aadd===parseInt(uuid[_0x200eea(0x198)](_0x358b39*0x2,0x2),0x10)))return;const _0x5d4da4=_0x162b5a['readUInt8'](0x11);let _0x2f0ad5=0x13+_0x5d4da4;if(_0x162b5a[_0x200eea(_0x141431._0x56d99e)]<_0x2f0ad5+0x3)return;const _0x4551a2=_0x162b5a[_0x200eea(0x192)](_0x2f0ad5);_0x2f0ad5+=0x2;const _0x2ead08=_0x162b5a[_0x200eea(_0x141431._0x3f1afe)](_0x2f0ad5++);let _0x37c634='';try{if(_0x2ead08===0x1)_0x37c634=_0x162b5a['slice'](_0x2f0ad5,_0x2f0ad5+=0x4)[_0x200eea(_0x141431._0x32defe)]('.');else{if(_0x2ead08===0x2){const _0x46c2fe=_0x162b5a[_0x2f0ad5];_0x37c634=new TextDecoder()[_0x200eea(_0x141431._0x54f75b)](_0x162b5a[_0x200eea(_0x141431._0x4cfd6e)](_0x2f0ad5+0x1,_0x2f0ad5+=0x1+_0x46c2fe));}else{if(_0x2ead08===0x3)_0x37c634=_0x162b5a[_0x200eea(_0x141431._0x204b61)](_0x2f0ad5,_0x2f0ad5+=0x10)[_0x200eea(0x186)]((_0x2e3825,_0x17bfcd,_0x34ea41,_0x1029fb)=>_0x34ea41%0x2?_0x2e3825[_0x200eea(0x15e)](_0x1029fb[_0x200eea(0x190)](_0x34ea41-0x1,_0x34ea41+0x1)):_0x2e3825,[])[_0x200eea(_0x141431._0x26fa49)](_0x1d1a32=>_0x1d1a32[_0x200eea(0x192)](0x0)['toString'](0x10))['join'](':');else return;}}}catch(_0x4144a4){return;}_0x2b57a6[_0x200eea(0x165)](new Uint8Array([_0xd8454d,0x0]));const _0x224685=createWebSocketStream(_0x2b57a6);net[_0x200eea(_0x141431._0x2e731c)]({'host':_0x37c634,'port':_0x4551a2},function(){const _0x5714b9=_0x200eea;this[_0x5714b9(_0x58301d._0x26fc5a)](_0x162b5a[_0x5714b9(_0x58301d._0x5cd038)](_0x2f0ad5)),_0x224685['on'](_0x5714b9(_0x58301d._0x5e4105),()=>{})[_0x5714b9(_0x58301d._0xa8c388)](this)['on'](_0x5714b9(_0x58301d._0x5e4105),()=>{})[_0x5714b9(0x176)](_0x224685);})['on'](_0x200eea(0x16a),()=>{});})['on'](_0x1378fc(_0x1425e3._0x52d21e),()=>{});}),console[_0x337212(0x180)]('\x0a💣Vless-ws-tls节点分享:\x20\x0a'+vlessURL+'\x0a');}});}else console[_0x3731a6(_0x101809._0x438e28)](_0x3731a6(0x161)+_0x5aabaf);});
+const http = require('http');
+const fs = require('fs');
+const os = require('os');
+const net = require('net');
+const path = require('path');
+const { exec } = require('child_process');
+
+const { WebSocket, createWebSocketStream } = require('ws');
+
+const NAME = process.env.NAME || os.hostname();
+const subtxt = path.join(os.homedir(), 'agsb', 'jh.txt');
+const PORT = process.env.PORT || 8080;
+const DOMAIN = process.env.DOMAIN || 'no_domain';
+const rawUUID = process.env.uuid || 'b9d765a3-ef02-4738-924f-6cb4fe126515';
+const hasUUID = !!process.env.uuid;
+const hasDOMAIN = !!process.env.DOMAIN;
+const uuid = rawUUID.replace(/-/g, "");
+const vlessURL = (hasUUID && hasDOMAIN)
+  ? `vless://${rawUUID}@${DOMAIN}:443?encryption=none&security=tls&sni=${DOMAIN}&fp=chrome&type=ws&host=${DOMAIN}&path=%2F#Vl-ws-tls-${NAME}`
+  : '';
+
+const server = http.createServer((req, res) => {
+  if (req.url === '/') {
+    res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('🟢恭喜！部署成功！欢迎使用甬哥YGkkk-ArgoSB小钢炮脚本💣 【当前版本V25.8.8】\n\n查看节点信息路径：/你的uuid或者/subuuid');
+  } else if (req.url === `/${rawUUID}`) {
+    fs.readFile(subtxt, 'utf8', (err, data) => {
+      const result = !err && data ? (vlessURL ? `${vlessURL}\n${data}` : data) : vlessURL;
+      res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.end(result);
+    });
+  } else {
+    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('❌Not Found：路径错误！！！\n\n查看节点信息路径：/你的uuid或者/subuuid');
+  }
+});
+
+server.listen(PORT, () => {
+  console.log(`✅Server is running on port ${PORT}`);
+
+  const argosbPath = path.join(os.homedir(), 'agsb', 'argosb.sh');
+  if (fs.existsSync(argosbPath)) {
+    const child = exec(`sh ${argosbPath}`);
+    child.stdout.on('data', chunk => process.stdout.write(chunk));
+    child.stderr.on('data', chunk => process.stderr.write(chunk));
+    child.on('close', (code) => {
+      console.clear();
+      console.log(`🚀App is running`);
+
+      if (hasUUID && hasDOMAIN) {
+        const wss = new WebSocket.Server({ server });
+        wss.on('connection', ws => {
+          ws.once('message', msg => {
+            if (!(msg instanceof Buffer)) msg = Buffer.from(msg);
+            if (msg.length < 19) return;
+
+            const [VERSION] = msg;
+            const id = msg.slice(1, 17);
+            if (!id.every((v, i) => v === parseInt(uuid.substr(i * 2, 2), 16))) return;
+
+            const offset = msg.readUInt8(17);
+            let i = 19 + offset;
+            if (msg.length < i + 3) return;
+
+            const port = msg.readUInt16BE(i);
+            i += 2;
+            const ATYP = msg.readUInt8(i++);
+            let host = '';
+            try {
+              if (ATYP === 1) {
+                host = msg.slice(i, i += 4).join('.');
+              } else if (ATYP === 2) {
+                const len = msg[i];
+                host = new TextDecoder().decode(msg.slice(i + 1, i += 1 + len));
+              } else if (ATYP === 3) {
+                host = msg.slice(i, i += 16)
+                  .reduce((s, b, j, a) => (j % 2 ? s.concat(a.slice(j - 1, j + 1)) : s), [])
+                  .map(b => b.readUInt16BE(0).toString(16))
+                  .join(':');
+              } else return;
+            } catch (err) { return; }
+
+            ws.send(new Uint8Array([VERSION, 0]));
+            const duplex = createWebSocketStream(ws);
+            net.connect({ host, port }, function () {
+              this.write(msg.slice(i));
+              duplex.on('error', () => {}).pipe(this).on('error', () => {}).pipe(duplex);
+            }).on('error', () => {});
+          }).on('error', () => {});
+        });
+        console.log(`\n💣Vless-ws-tls节点分享: \n${vlessURL}\n`);
+      }
+    });
+  } else {
+    console.error(`argosb.sh not found at ${argosbPath}`);
+  }
+});
