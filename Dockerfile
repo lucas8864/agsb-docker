@@ -1,43 +1,46 @@
-# 使用 Node 20 alpine 镜像
+# Node.js 20 Alpine
 FROM node:20-alpine
 
-ENV  HOME=/home/node
-ARG  uuid=$uuid
-ARG  vmpt=$vmpt
-ARG  hypt=$hypt
-ARG  PORT=$PORT
-ARG  argo=$argo
-ARG  agn=$agn
-ARG  agk=$agk
+# 运行环境
+ENV HOME=/home/node
+ENV PORT=8080
 
 WORKDIR /app
 
-# 安装依赖 & 下载脚本
-RUN apk add --no-cache curl bash wget python3 py3-pip py3-requests net-tools lsof \
- && npm install -g npm@11.5.2 \
- && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/argosb.sh \
- && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/index.js \
- && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/package.json \
- && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/package-lock.json \
- && chmod +x argosb.sh  \
- && npm install --production ws \
- && npm cache clean --force
+# 安装运行所需工具
+RUN apk add --no-cache \
+    bash \
+    curl \
+    wget \
+    python3 \
+    py3-pip \
+    py3-requests \
+    net-tools \
+    lsof \
+    ca-certificates \
+    openssl \
+    procps
 
-# 创建运行目录并移动脚本
-RUN mkdir -p "$HOME/agsb" \
- && mv argosb.sh "$HOME/agsb/argosb.sh" \
- && chmod -R 777 "$HOME/agsb"
+# 先复制依赖文件，利用 Docker 缓存
+COPY package.json package-lock.json ./
 
-# 给 node 用户权限
-RUN mkdir -p /app/node_modules "$HOME/bin" \
- && chmod -R 777 /app "$HOME/bin" \
- && ifconfig eth0 && netstat -antp 
+# 安装 Node 依赖
+RUN npm ci --omit=dev \
+    && npm cache clean --force
 
-# 切换到 node 用户
+# 复制项目文件
+COPY index.js /app/index.js
+COPY argosb.sh /home/node/agsb/argosb.sh
+
+# 设置权限
+RUN chmod +x /home/node/agsb/argosb.sh \
+    && chown -R node:node /app /home/node/agsb
+
+# 使用 node 用户运行
 USER node
 
-# 暴露端口
+# Cloud Run HTTP 端口
 EXPOSE 8080
 
-# 采用start.sh启动web服务
+# Cloud Run 启动入口
 CMD ["node", "index.js"]
