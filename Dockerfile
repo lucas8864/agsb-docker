@@ -19,7 +19,6 @@ RUN apk add --no-cache curl bash wget python3 py3-pip py3-requests net-tools lso
  && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/index.js \
  && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/package.json \
  && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/package-lock.json \
- && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/package-lock.json \
  && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/server.py \
  && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/start.sh \
  && chmod +x argosb.sh start.sh server.py \
@@ -41,7 +40,7 @@ RUN mkdir -p /app/node_modules "$HOME/bin" \
 USER node
 
 # 暴露端口
-EXPOSE 7860
+EXPOSE 8080
 
 # 采用start.sh启动web服务
 CMD ["node", "index.js"]
