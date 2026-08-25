@@ -12,7 +12,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 # ========== 配置 ==========
 NAME = os.getenv("NAME", socket.gethostname())
-PORT = int(os.getenv("PORT", "3000"))  # HTTP 服务端口
+PORT = int(os.getenv("PORT", "8080"))  # HTTP 服务端口
 DOMAIN = os.getenv("DOMAIN", "no_domain")
 RAW_UUID = os.getenv("uuid", "") or str(uuid.uuid4()) # 变量uuid，若不配置则随机生成uuid
 HAS_UUID = bool(os.getenv("uuid"))
