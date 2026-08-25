@@ -19,9 +19,7 @@ RUN apk add --no-cache curl bash wget python3 py3-pip py3-requests net-tools lso
  && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/index.js \
  && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/package.json \
  && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/package-lock.json \
- && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/server.py \
- && curl -LOs https://github.com/lucas8864/agsb-docker/raw/refs/heads/main/start.sh \
- && chmod +x argosb.sh start.sh server.py \
+ && chmod +x argosb.sh  \
  && npm install --production ws \
  && npm cache clean --force
 
@@ -33,8 +31,7 @@ RUN mkdir -p "$HOME/agsb" \
 # 给 node 用户权限
 RUN mkdir -p /app/node_modules "$HOME/bin" \
  && chmod -R 777 /app "$HOME/bin" \
- && ifconfig eth0 && netstat -antp \
- && cat start.sh
+ && ifconfig eth0 && netstat -antp 
 
 # 切换到 node 用户
 USER node
@@ -44,4 +41,3 @@ EXPOSE 8080
 
 # 采用start.sh启动web服务
 CMD ["node", "index.js"]
-#CMD ["bash", "-c", "./start.sh"]
