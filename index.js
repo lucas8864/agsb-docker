@@ -9,7 +9,7 @@ const { WebSocket, createWebSocketStream } = require('ws');
 
 const NAME = process.env.NAME || os.hostname();
 const subtxt = path.join(os.homedir(), 'agsb', 'jh.txt');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const DOMAIN = process.env.DOMAIN || 'no_domain';
 const rawUUID = process.env.uuid || 'subuuid';
 const hasUUID = !!process.env.uuid;
